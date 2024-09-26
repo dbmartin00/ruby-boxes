@@ -4,6 +4,8 @@ Uses the FME Ruby SDK to paint an m x n bank of boxes, where each box has a uniq
 
 e.g. http://localhost:8000/feature_flags/show_treatments
 
+![Screenshot of the feature](screenshot.jpg)
+
 Consult https://help.split.io/hc/en-us/articles/360020673251-Ruby-SDK for full Ruby SDK documentation.
 
 Author: david.martin@harness.io
