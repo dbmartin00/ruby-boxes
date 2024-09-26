@@ -1,0 +1,26 @@
+<h1>Feature Flag Treatments Table</h1>
+
+<table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
+  <thead>
+    <tr>
+      <th></th>
+      <% ('0'..'9').each do |num| %>
+        <th><%= num %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% ('a'..'z').each_with_index do |letter, letter_idx| %>
+      <tr>
+        <td><%= letter %></td>
+        <% @treatments_table[letter_idx].each do |treatment| %>
+          <td style="background-color: <%= treatment == 'on' ? 'rgb(42, 39, 135)' : 'rgb(187, 38, 45)' %>; color: white;">
+            <!-- Optionally, you can still display the 'on' or 'off' text -->
+            <%= treatment %>
+          </td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
